@@ -24,7 +24,7 @@ class NoteFormWidget extends StatelessWidget {
         decoration: InputDecoration(
           enabledBorder: InputBorder.none,
           border: InputBorder.none,
-          hintText: 'Enter new task',
+          hintText: 'Добавьте задачу...',
           hintStyle:
               TextStyle(color: Colors.black.withOpacity(0.3), fontSize: 27),
         ),

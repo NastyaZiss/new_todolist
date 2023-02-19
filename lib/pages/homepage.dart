@@ -135,9 +135,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "${notes.length.toString()} tasks",
+                              "${notes.length.toString()} задачи",
                               style: TextStyle(
-                                  color: Colors.grey.withOpacity(0.9)),
+                                  color: Color.fromARGB(255, 227, 94, 94)
+                                      .withOpacity(0.9)),
                             ),
                             SizedBox(
                               height: he * 0.01,
@@ -192,7 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ? Container(
                                 margin:
                                     const EdgeInsets.only(left: 130, top: 120),
-                                child: Text("No Tasks",
+                                child: Text("Нет задач",
                                     style: TextStyle(
                                       fontSize: 20,
                                       color: Theme.of(context).primaryColor,
@@ -221,8 +222,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                             },
                                             backgroundColor: Color(0xFFFE4A49),
                                             foregroundColor: Colors.white,
-                                            icon: Icons.delete,
-                                            label: "Delete",
+                                            icon: Icons.delete_outline,
+                                            label: "Убрать",
                                           ),
                                           SlidableAction(
                                             onPressed: (context) async {
@@ -237,7 +238,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             backgroundColor:
                                                 const Color(0xFF21B7CA),
                                             foregroundColor: Colors.white,
-                                            label: "Edite",
+                                            label: "Изменить",
                                             icon: Icons.edit,
                                           ),
                                         ],

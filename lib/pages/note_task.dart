@@ -104,7 +104,7 @@ class _Note_TaskState extends State<Note_Task> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "New task",
+                "Сохранить",
                 style: TextStyle(color: Colors.white),
               ),
               SizedBox(
@@ -137,8 +137,8 @@ class _Note_TaskState extends State<Note_Task> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Save",
-                style: TextStyle(color: Colors.white),
+                "Сохранить",
+                style: TextStyle(color: Color.fromARGB(255, 163, 47, 47)),
               ),
               SizedBox(
                 width: we * 0.03,
